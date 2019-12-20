@@ -3,7 +3,12 @@ const readline = require('readline');
 const fs = require('fs');
 const path = require('path');
 
-const SAVE_FILE = path.join(__dirname, 'ip.txt');
+const PACKAGED = true;
+
+const SAVE_FILE = path.join(
+    PACKAGED ? path.dirname(process.execPath) : __dirname,
+    'ip.txt'
+);
 
 // Configure console.debug
 let debug = false;
