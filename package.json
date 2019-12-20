@@ -1,0 +1,12 @@
+{
+  "name": "oculus-connector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "pkg -t node10-win-x64 main.js -o QuestConnector"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
